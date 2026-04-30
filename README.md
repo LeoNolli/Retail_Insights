@@ -4,7 +4,8 @@
 [![MySQL](https://img.shields.io/badge/MySQL-8.0-orange.svg)](https://www.mysql.com/)
 [![Gemini](https://img.shields.io/badge/Google_Gemini-2.5_Flash-green.svg)](https://ai.google.dev/)
 
-Nesse repositório encontra-se uma **pipeline de análise e tratamento de dados** focado no setor de varejo (*Retail*). O objetivo principal é a unificação de **Python, SQL e IA** para criação de um ambiente de testes realistas com análise de dados para suporte à decisão. 
+Retail Insights: AI-Driven Data Pipeline
+Nesse repositório encontra-se uma pipeline de análise e tratamento de dados focado no setor de varejo (Retail). O objetivo principal é a unificação de Python, SQL e Inteligência Artificial para a criação de um ambiente de testes realistas com análise de dados para suporte à decisão.
 
 O sistema utiliza a **API Google Gemini 2.5 Flash** para geração de dados sintéticos de alta fidelidade, que são processados via **Pandas** e persistidos em um banco de dados **MySQL**.
 
@@ -20,15 +21,27 @@ O sistema utiliza a **API Google Gemini 2.5 Flash** para geração de dados sint
 * **MySQL**: Sistema de gerenciamento de banco de dados relacional.
 
 ---
+## Fluxo de Funcionamento e Arquitetura de Dados
+O pipeline foi desenhado para simular um ambiente real de análise de dados:
 
+Geração Sintética: Utilização da API Google Gemini 1.5 Flash para popular o DataFrame inicial com dados sintéticos de alta fidelidade, garantindo um volume de dados realista para testes.
+
+Persistência Relacional: Estruturação e inserção dos dados em um banco de dados MySQL, garantindo a integridade referencial entre as tabelas de Clientes, Produtos, Pedidos e Endereços.
+
+Consolidação (Master Dataset): Processamento das tabelas SQL para a criação de um arquivo CSV Master. Esta etapa foi fundamental para permitir uma visualização completa e performática de todas as colunas em um único dataset consolidado.
+
+Analytics: Leitura do arquivo consolidado para extração de métricas de negócio.
+---
 ## Estrutura do Banco de Dados
+O banco de dados contém quatro entidades principais:
 
-O banco de dados `retailDB` contém duas entidades principais com integridade referencial:
+Clientes: Dados cadastrais e demográficos.
 
-1.  **Clientes**: Armazena informações cadastrais.
-    * `ID`, `first_name`, `last_name`, `data_nascimento`.
-2.  **Pedidos**: Registra as transações comerciais vinculadas aos clientes via **Foreign Key (FK)**.
+Produtos: Catálogo de itens com precificação e categorias.
 
+Pedidos: Transações comerciais vinculando clientes e produtos.
+
+Endereços: Localizações geográficas para análise de expansão e logística.
 ---
 
 ## Fluxo de Funcionamento
@@ -61,17 +74,26 @@ O pipeline segue as seguintes etapas de execução:
 4.  **Execução:** Execute o notebook principal ou o script `main.py`.
 
 ---
+Análises Propostas e Insights
+Ao final da pipeline, o projeto entrega análises estratégicas baseadas em dados reais de mercado:
 
-## Objetivos de Estudo
+Análise Geográfica: Identificação de polos de consumo através de mapas de calor, destacando a relevância do PIB per capita no volume de vendas regional.
 
-Este projeto faz parte do meu portfólio pessoal e visa demonstrar competências em:
+Comportamento Geracional: Estudo sobre o Ticket Médio por faixa etária, identificando o teto salarial e o poder de compra de Millennials e Geração X.
 
-* [x] Integração de APIs de terceiros em fluxos de dados reais.
-* [x] Modelagem e manipulação de bancos de dados relacionais.
-* [x] Criação de dados sintéticos para simulação de cenários de negócios (LGPD compliant).
-* [x] Visualização de dados para auxílio na tomada de decisões estratégicas.
-
+Mix de Produtos (Volume vs. Valor): Análise da disparidade entre a quantidade de itens vendidos e o valor agregado, propondo estratégias para produtos Premium.
 ---
+Objetivos de Estudo
+
+**Este projeto demonstra competências em, desenvolvido para meu portfólio pessoal:
+
+**Modelagem e manipulação de bancos de dados relacionais.
+
+**Processos de ETL (Extração, Transformação e Carga) para análise de performance.
+
+**Criação de dados sintéticos LGPD compliant para simulação de negócios.
+
+**Visualização de dados avançada com mapas de calor e gráficos estatísticos.
 
 **Desenvolvido por:** José Leonardo Noli Júnior  
 **Área:** Data Analytics  
