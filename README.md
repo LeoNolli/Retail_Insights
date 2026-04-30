@@ -6,10 +6,26 @@
 
 Retail Insights: AI-Driven Data Pipeline
 Nesse repositório encontra-se uma pipeline de análise e tratamento de dados focado no setor de varejo (Retail). O objetivo principal é a unificação de Python, SQL e Inteligência Artificial para a criação de um ambiente de testes realistas com análise de dados para suporte à decisão.
-<img width="1193" height="578" alt="image" src="https://github.com/user-attachments/assets/ed24a0eb-2c8d-4bed-9e79-4c5e9b25d4f2" />
-<img width="844" height="550" alt="image" src="https://github.com/user-attachments/assets/0793bf49-9e5e-481f-ae0f-9ff3f0b1dba0" />
-<img width="1209" height="504" alt="image" src="https://github.com/user-attachments/assets/c0b9b1b5-5038-4f57-a2ae-421eb6c7f8c1" />
-<img width="677" height="650" alt="image" src="https://github.com/user-attachments/assets/4eb18f86-5de8-49cb-b135-b7beda3d512c" />
+<table align="center">
+  <tr>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/ed24a0eb-2c8d-4bed-9e79-4c5e9b25d4f2" width="250px" alt="Insight 1"/><br />
+      <b>Distribuição por Geração</b>
+    </td>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/0793bf49-9e5e-481f-ae0f-9ff3f0b1dba0" width="250px" alt="Insight 2"/><br />
+      <b>Ticket Médio</b>
+    </td>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/c0b9b1b5-5038-4f57-a2ae-421eb6c7f8c1" width="250px" alt="Insight 3"/><br />
+      <b>Volume vs Valor</b>
+    </td>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/4eb18f86-5de8-49cb-b135-b7beda3d512c" width="250px" alt="Insight 4"/><br />
+      <b>Mapa de Calor</b>
+    </td>
+  </tr>
+</table>
 
 O sistema utiliza a **API Google Gemini 2.5 Flash** para geração de dados sintéticos de alta fidelidade, que são processados via **Pandas** e persistidos em um banco de dados **MySQL**.
 
