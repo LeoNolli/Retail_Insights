@@ -85,15 +85,15 @@ Mix de Produtos (Volume vs. Valor): Análise da disparidade entre a quantidade d
 ---
 Objetivos de Estudo
 
-* **Este projeto demonstra competências em, desenvolvido para meu portfólio pessoal:
+* **Este projeto demonstra competências em, desenvolvido para meu portfólio pessoal:**
 
-* **Modelagem e manipulação de bancos de dados relacionais.
+* **Modelagem e manipulação de bancos de dados relacionais**.
 
-* **Processos de ETL (Extração, Transformação e Carga) para análise de performance.
+* **Processos de ETL (Extração, Transformação e Carga) para análise de performance**.
 
-* **Criação de dados sintéticos LGPD compliant para simulação de negócios.
+* **Criação de dados sintéticos LGPD compliant para simulação de negócios**.
 
-* **Visualização de dados avançada com mapas de calor e gráficos estatísticos.
+* **Visualização de dados avançada com mapas de calor e gráficos estatísticos**.
 
 **Desenvolvido por:** José Leonardo Noli Júnior  
 **Área:** Data Analytics  
