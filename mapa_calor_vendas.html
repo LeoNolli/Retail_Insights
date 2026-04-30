@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_bfa747ccb6828ed56bf91e2b2df0ae37 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdn.jsdelivr.net/gh/python-visualization/folium@main/folium/templates/leaflet_heat.min.js"></script>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_bfa747ccb6828ed56bf91e2b2df0ae37" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_bfa747ccb6828ed56bf91e2b2df0ae37 = L.map(
+                "map_bfa747ccb6828ed56bf91e2b2df0ae37",
+                {
+                    center: [-15.7801, -47.9292],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 4,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_086a6887e75a0220ead487f7bdbdb01f = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_086a6887e75a0220ead487f7bdbdb01f.addTo(map_bfa747ccb6828ed56bf91e2b2df0ae37);
+        
+    
+            var heat_map_76c3882a6d88ca128560fc07d859f49e = L.heatLayer(
+                [[-23.5505, -46.6333, 600.0], [-22.9068, -43.1729, 8580.0], [-19.9167, -43.9345, 2800.0], [-25.429, -49.2671, 5230.0], [-30.0346, -51.2177, 14880.0], [-12.9704, -38.5124, 11440.0], [-8.0543, -34.8813, 4120.0], [-15.7942, -47.8822, 4600.0], [-3.7319, -38.5267, 12120.0], [-3.119, -60.0217, 9730.0]],
+                {
+  "minOpacity": 0.5,
+  "maxZoom": 18,
+  "radius": 25,
+  "blur": 15,
+}
+            );
+        
+    
+            heat_map_76c3882a6d88ca128560fc07d859f49e.addTo(map_bfa747ccb6828ed56bf91e2b2df0ae37);
+        
+    
+            var marker_834ccecf660d44f3f081bd3615f91766 = L.marker(
+                [-23.5505, -46.6333],
+                {
+}
+            ).addTo(map_bfa747ccb6828ed56bf91e2b2df0ae37);
+        
+    
+            var icon_6b328a5d38f5727c5b4f7eb51c8869c4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d9526c92bb3251804fcbd2ab86d502bb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8c9bae51fb8737c3ec3a2b0271e53317 = $(`<div id="html_8c9bae51fb8737c3ec3a2b0271e53317" style="width: 100.0%; height: 100.0%;"><b>São Paulo - SP</b><br>Faturamento: R$ 600.00</div>`)[0];
+                popup_d9526c92bb3251804fcbd2ab86d502bb.setContent(html_8c9bae51fb8737c3ec3a2b0271e53317);
+            
+        
+
+        marker_834ccecf660d44f3f081bd3615f91766.bindPopup(popup_d9526c92bb3251804fcbd2ab86d502bb)
+        ;
+
+        
+    
+    
+                marker_834ccecf660d44f3f081bd3615f91766.setIcon(icon_6b328a5d38f5727c5b4f7eb51c8869c4);
+            
+    
+            var marker_3aa749319db64fb6bf7874f70f337e9a = L.marker(
+                [-22.9068, -43.1729],
+                {
+}
+            ).addTo(map_bfa747ccb6828ed56bf91e2b2df0ae37);
+        
+    
+            var icon_02f3fa562c0a9162321826e62c07904e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b7beaed27c2655215128e6a2ea86178a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_993edc4f623c7b0307cf7ebb28ba7aba = $(`<div id="html_993edc4f623c7b0307cf7ebb28ba7aba" style="width: 100.0%; height: 100.0%;"><b>Rio de Janeiro - RJ</b><br>Faturamento: R$ 8,580.00</div>`)[0];
+                popup_b7beaed27c2655215128e6a2ea86178a.setContent(html_993edc4f623c7b0307cf7ebb28ba7aba);
+            
+        
+
+        marker_3aa749319db64fb6bf7874f70f337e9a.bindPopup(popup_b7beaed27c2655215128e6a2ea86178a)
+        ;
+
+        
+    
+    
+                marker_3aa749319db64fb6bf7874f70f337e9a.setIcon(icon_02f3fa562c0a9162321826e62c07904e);
+            
+    
+            var marker_b6cba2347b468d9ac082d9d0af49783f = L.marker(
+                [-19.9167, -43.9345],
+                {
+}
+            ).addTo(map_bfa747ccb6828ed56bf91e2b2df0ae37);
+        
+    
+            var icon_346b03fd773531f8c879d8fa46b7cb9b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_23ac038639f63be398ea31df53279530 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_edd2e4626decd6dc436c2d53bf3598ef = $(`<div id="html_edd2e4626decd6dc436c2d53bf3598ef" style="width: 100.0%; height: 100.0%;"><b>Belo Horizonte - MG</b><br>Faturamento: R$ 2,800.00</div>`)[0];
+                popup_23ac038639f63be398ea31df53279530.setContent(html_edd2e4626decd6dc436c2d53bf3598ef);
+            
+        
+
+        marker_b6cba2347b468d9ac082d9d0af49783f.bindPopup(popup_23ac038639f63be398ea31df53279530)
+        ;
+
+        
+    
+    
+                marker_b6cba2347b468d9ac082d9d0af49783f.setIcon(icon_346b03fd773531f8c879d8fa46b7cb9b);
+            
+    
+            var marker_32984547e43d83911d8f76652d71ba7c = L.marker(
+                [-25.429, -49.2671],
+                {
+}
+            ).addTo(map_bfa747ccb6828ed56bf91e2b2df0ae37);
+        
+    
+            var icon_ce1640e69a9bdd08db15bc08b5d0073a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b47a2c6d097265d7e33ba007ce3f7014 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_28c5de075ee5077e225f5dbb06246242 = $(`<div id="html_28c5de075ee5077e225f5dbb06246242" style="width: 100.0%; height: 100.0%;"><b>Curitiba - PR</b><br>Faturamento: R$ 5,230.00</div>`)[0];
+                popup_b47a2c6d097265d7e33ba007ce3f7014.setContent(html_28c5de075ee5077e225f5dbb06246242);
+            
+        
+
+        marker_32984547e43d83911d8f76652d71ba7c.bindPopup(popup_b47a2c6d097265d7e33ba007ce3f7014)
+        ;
+
+        
+    
+    
+                marker_32984547e43d83911d8f76652d71ba7c.setIcon(icon_ce1640e69a9bdd08db15bc08b5d0073a);
+            
+    
+            var marker_501b0c03ec205bd0ad8a2313bd0f768e = L.marker(
+                [-30.0346, -51.2177],
+                {
+}
+            ).addTo(map_bfa747ccb6828ed56bf91e2b2df0ae37);
+        
+    
+            var icon_1d542a618492ed6c56188e81ba1d9ede = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9b5405cb295af537b89a6d252ebca576 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9bbdc9a16839c9aebb7918e521ae0588 = $(`<div id="html_9bbdc9a16839c9aebb7918e521ae0588" style="width: 100.0%; height: 100.0%;"><b>Porto Alegre - RS</b><br>Faturamento: R$ 14,880.00</div>`)[0];
+                popup_9b5405cb295af537b89a6d252ebca576.setContent(html_9bbdc9a16839c9aebb7918e521ae0588);
+            
+        
+
+        marker_501b0c03ec205bd0ad8a2313bd0f768e.bindPopup(popup_9b5405cb295af537b89a6d252ebca576)
+        ;
+
+        
+    
+    
+                marker_501b0c03ec205bd0ad8a2313bd0f768e.setIcon(icon_1d542a618492ed6c56188e81ba1d9ede);
+            
+    
+            var marker_350256aa095ac2368976fb4ee168084b = L.marker(
+                [-12.9704, -38.5124],
+                {
+}
+            ).addTo(map_bfa747ccb6828ed56bf91e2b2df0ae37);
+        
+    
+            var icon_64eff4e8097537fa5a85a1882908ffad = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bb54a27594eb65b8dc38e7f8f9d25949 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_122055fcef7ad89ecb4d0ab31b20cbd0 = $(`<div id="html_122055fcef7ad89ecb4d0ab31b20cbd0" style="width: 100.0%; height: 100.0%;"><b>Salvador - BA</b><br>Faturamento: R$ 11,440.00</div>`)[0];
+                popup_bb54a27594eb65b8dc38e7f8f9d25949.setContent(html_122055fcef7ad89ecb4d0ab31b20cbd0);
+            
+        
+
+        marker_350256aa095ac2368976fb4ee168084b.bindPopup(popup_bb54a27594eb65b8dc38e7f8f9d25949)
+        ;
+
+        
+    
+    
+                marker_350256aa095ac2368976fb4ee168084b.setIcon(icon_64eff4e8097537fa5a85a1882908ffad);
+            
+    
+            var marker_37e0cdc0a2550fce8f6ecd4dbf66d031 = L.marker(
+                [-8.0543, -34.8813],
+                {
+}
+            ).addTo(map_bfa747ccb6828ed56bf91e2b2df0ae37);
+        
+    
+            var icon_0afbec99585de10d5310e8e9406bcc01 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1fb79ecf04d22849cfd3b14c767ed21a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_13cad096f70b8fb6bec943b261789323 = $(`<div id="html_13cad096f70b8fb6bec943b261789323" style="width: 100.0%; height: 100.0%;"><b>Recife - PE</b><br>Faturamento: R$ 4,120.00</div>`)[0];
+                popup_1fb79ecf04d22849cfd3b14c767ed21a.setContent(html_13cad096f70b8fb6bec943b261789323);
+            
+        
+
+        marker_37e0cdc0a2550fce8f6ecd4dbf66d031.bindPopup(popup_1fb79ecf04d22849cfd3b14c767ed21a)
+        ;
+
+        
+    
+    
+                marker_37e0cdc0a2550fce8f6ecd4dbf66d031.setIcon(icon_0afbec99585de10d5310e8e9406bcc01);
+            
+    
+            var marker_7663fe5ea1005c851b0aad49462b1443 = L.marker(
+                [-15.7942, -47.8822],
+                {
+}
+            ).addTo(map_bfa747ccb6828ed56bf91e2b2df0ae37);
+        
+    
+            var icon_2508327bb8ff1c46d0e00901192b428d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7b26507dae65f655ce6ebfa2debfae39 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bf7740d3218b74b04a6c31fbce1c16f5 = $(`<div id="html_bf7740d3218b74b04a6c31fbce1c16f5" style="width: 100.0%; height: 100.0%;"><b>Brasília - DF</b><br>Faturamento: R$ 4,600.00</div>`)[0];
+                popup_7b26507dae65f655ce6ebfa2debfae39.setContent(html_bf7740d3218b74b04a6c31fbce1c16f5);
+            
+        
+
+        marker_7663fe5ea1005c851b0aad49462b1443.bindPopup(popup_7b26507dae65f655ce6ebfa2debfae39)
+        ;
+
+        
+    
+    
+                marker_7663fe5ea1005c851b0aad49462b1443.setIcon(icon_2508327bb8ff1c46d0e00901192b428d);
+            
+    
+            var marker_219370d918c4bb5d03ffeefa7e24a00f = L.marker(
+                [-3.7319, -38.5267],
+                {
+}
+            ).addTo(map_bfa747ccb6828ed56bf91e2b2df0ae37);
+        
+    
+            var icon_16fd2cad5afc0ca6f6229e3a3aeddf25 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_38e0a856dca93900e331796726c9b546 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e7401ae2d938a2600b83b89c0432d82d = $(`<div id="html_e7401ae2d938a2600b83b89c0432d82d" style="width: 100.0%; height: 100.0%;"><b>Fortaleza - CE</b><br>Faturamento: R$ 12,120.00</div>`)[0];
+                popup_38e0a856dca93900e331796726c9b546.setContent(html_e7401ae2d938a2600b83b89c0432d82d);
+            
+        
+
+        marker_219370d918c4bb5d03ffeefa7e24a00f.bindPopup(popup_38e0a856dca93900e331796726c9b546)
+        ;
+
+        
+    
+    
+                marker_219370d918c4bb5d03ffeefa7e24a00f.setIcon(icon_16fd2cad5afc0ca6f6229e3a3aeddf25);
+            
+    
+            var marker_97553baee3a1230549b7c621df6519a9 = L.marker(
+                [-3.119, -60.0217],
+                {
+}
+            ).addTo(map_bfa747ccb6828ed56bf91e2b2df0ae37);
+        
+    
+            var icon_20d325c1f7b5231ed30841494f674f4a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b17b770282fcee6a31f82ed80a820d96 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_678cc348c793524c706b0ec2cac00de5 = $(`<div id="html_678cc348c793524c706b0ec2cac00de5" style="width: 100.0%; height: 100.0%;"><b>Manaus - AM</b><br>Faturamento: R$ 9,730.00</div>`)[0];
+                popup_b17b770282fcee6a31f82ed80a820d96.setContent(html_678cc348c793524c706b0ec2cac00de5);
+            
+        
+
+        marker_97553baee3a1230549b7c621df6519a9.bindPopup(popup_b17b770282fcee6a31f82ed80a820d96)
+        ;
+
+        
+    
+    
+                marker_97553baee3a1230549b7c621df6519a9.setIcon(icon_20d325c1f7b5231ed30841494f674f4a);
+            
+    
+            tile_layer_086a6887e75a0220ead487f7bdbdb01f.addTo(map_bfa747ccb6828ed56bf91e2b2df0ae37);
+        
+    
+            heat_map_76c3882a6d88ca128560fc07d859f49e.addTo(map_bfa747ccb6828ed56bf91e2b2df0ae37);
+        
+    
+                marker_834ccecf660d44f3f081bd3615f91766.setIcon(icon_6b328a5d38f5727c5b4f7eb51c8869c4);
+            
+    
+                marker_3aa749319db64fb6bf7874f70f337e9a.setIcon(icon_02f3fa562c0a9162321826e62c07904e);
+            
+    
+                marker_b6cba2347b468d9ac082d9d0af49783f.setIcon(icon_346b03fd773531f8c879d8fa46b7cb9b);
+            
+    
+                marker_32984547e43d83911d8f76652d71ba7c.setIcon(icon_ce1640e69a9bdd08db15bc08b5d0073a);
+            
+    
+                marker_501b0c03ec205bd0ad8a2313bd0f768e.setIcon(icon_1d542a618492ed6c56188e81ba1d9ede);
+            
+    
+                marker_350256aa095ac2368976fb4ee168084b.setIcon(icon_64eff4e8097537fa5a85a1882908ffad);
+            
+    
+                marker_37e0cdc0a2550fce8f6ecd4dbf66d031.setIcon(icon_0afbec99585de10d5310e8e9406bcc01);
+            
+    
+                marker_7663fe5ea1005c851b0aad49462b1443.setIcon(icon_2508327bb8ff1c46d0e00901192b428d);
+            
+    
+                marker_219370d918c4bb5d03ffeefa7e24a00f.setIcon(icon_16fd2cad5afc0ca6f6229e3a3aeddf25);
+            
+    
+                marker_97553baee3a1230549b7c621df6519a9.setIcon(icon_20d325c1f7b5231ed30841494f674f4a);
+            
+</script>
+</html>

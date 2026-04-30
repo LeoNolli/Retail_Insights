@@ -1,0 +1,11 @@
+pedido_id,data_pedido,valor_venda,cliente_id,nome_completo,data_nascimento,geracao,nome,categoria_produto,endereco_entrega,latitude,longitude
+11,2024-01-10,250.5,1,José Noli,2002-04-26,Gen Z,Teclado Mecânico Gamer RGB,Periféricos,"Rua das Flores, 123",-46.6333,-23.5505
+12,2024-01-12,120.0,2,Maria Oliveira,1995-08-12,Millennials,Mouse Gamer Óptico Ultraleve,Periféricos,"Av. Paulista, 1500",-43.1729,-22.9068
+13,2024-01-15,890.9,3,Carlos Drummond,1980-10-30,Gen X,Headset Gamer Surround 7.1,Periféricos,"Rua Bahia, 45",-43.9345,-19.9167
+14,2024-01-20,45.0,4,Ana Beatriz,2005-01-15,Gen Z,Teclado Mecânico Gamer RGB,Periféricos,"Praça da Sé, 10",-49.2671,-25.429
+15,2024-01-25,1500.0,5,Ricardo Santos,1992-11-22,Millennials,Placa de Vídeo RTX 4070 Ti SUPER,Hardware Interno,"Rua do Ouvidor, 100",-51.2177,-30.0346
+16,2024-02-01,300.0,1,José Noli,2002-04-26,Gen Z,Mouse Gamer Óptico Ultraleve,Periféricos,"Rua das Flores, 123",-46.6333,-23.5505
+17,2024-02-05,50.0,2,Maria Oliveira,1995-08-12,Millennials,Teclado Mecânico Gamer RGB,Periféricos,"Av. Paulista, 1500",-43.1729,-22.9068
+18,2024-02-10,75.0,6,Ana Silva,1985-03-15,Millennials,Headset Gamer Surround 7.1,Periféricos,"Av. Sete de Setembro, 500",-38.5124,-12.9704
+19,2024-02-15,1200.0,7,João Santos,1992-11-22,Millennials,Monitor Gamer 27'' 144Hz IPS,Periféricos,"Rua do Sol, 80",-34.8813,-8.0543
+20,2024-02-20,600.0,8,Mariana Oliveira,1978-07-01,Gen X,Placa de Vídeo RTX 4070 Ti SUPER,Hardware Interno,"Eixo Monumental, s/n",-47.8822,-15.7942
